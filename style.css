@@ -1,10 +1,63 @@
 #all {
-	border: 5px solid orange;
-	background-color: white;
+  border: 5px solid orange;
+  width: 1219px;
+  height:84px;
+  background-image: url("head.jpg");
+  background-size: cover;
 }
 body{
-	background: #1f2a30;
+  background-image:url('bg.jpg');
+  background-size:1229px 2000px;
+  margin:0px;
+}
+#container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width:1229px;
+  height:1600px;
 }
 #hh{
-	color:red;
+  font-family:'Verdana';
+  color:#27739d;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+}
+#chip{
+  border:5px solid #9e772b;
+  width:1219px;
+  height:403px;
+  background-image:url('mikrochip.jpg');
+  background-size:1219px 403px;
+}
+#ch{
+  position:relative;
+  top: 125px;
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#ftext{
+  width: 1219px;
+}
+#ht{
+  color:#cd8bff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+#alr{
+  font-family:'Verdana';
+}
+#ph{
+  border:5px solid #fb95ff;
+  width: 1219px;
+  height: 450px;
+  background-image: url('ton900m.jpg');
+  background-size:cover;
+}
+#intro{
+
+}
+#tgbots{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:#811c0a ;
 }
