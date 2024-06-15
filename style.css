@@ -1,20 +1,20 @@
 #all {
   border: 5px solid orange;
-  width: 899px;
+  width: 959px;
   height:84px;
   background-image: url("head.jpg");
   background-size: cover;
 }
 body{
   background-image:url('bg.jpg');
-  background-size:909px 2000px;
+  background-size:969px 2000px;
   margin:0px;
 }
 #container {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width:899px;
+  width:959px;
   height:1600px;
 }
 #hh{
@@ -24,10 +24,10 @@ body{
 }
 #chip{
   border:5px solid #9e772b;
-  width:899px;
+  width:959px;
   height:403px;
   background-image:url('mikrochip.jpg');
-  background-size:899px 403px;
+  background-size:959px 403px;
 }
 #ch{
   position:relative;
@@ -37,7 +37,7 @@ body{
 }
 
 #ftext{
-  width: 899px;
+  width: 959px;
 }
 #ht{
   color:#cd8bff;
@@ -49,7 +49,7 @@ body{
 }
 #ph{
   border:5px solid #fb95ff;
-  width: 899px;
+  width: 959px;
   height: 450px;
   background-image: url('ton900m.jpg');
   background-size:cover;
