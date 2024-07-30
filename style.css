@@ -1,63 +1,99 @@
-#all {
-  border: 5px solid orange;
-  width: 959px;
-  height:84px;
-  background-image: url("head.jpg");
-  background-size: cover;
+body {
+  background-color: #42049f;
 }
-body{
-  background-image:url('bg.jpg');
-  background-size:969px 2000px;
-  margin:0px;
+#title {
+	border: 3px solid black;
+	background-size: cover;
+	background-image: url('titlesite.jpg');
 }
-#container {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  width:959px 969px;
-  height:1600px;
+#titletext {
+	color:aquamarine;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
 }
-#hh{
-  font-family:'Verdana';
-  color:#27739d;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+#textupdates {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-size: cover;
+	background-image: url('mishka.jpg');
 }
-#chip{
-  border:5px solid #9e772b;
-  width:959px;
-  height:403px;
-  background-image:url('mikrochip.jpg');
-  background-size:959px 403px;
-}
-#ch{
-  position:relative;
-  top: 125px;
-  color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-#ftext{
-  width: 959px;
-}
-#ht{
-  color:#cd8bff;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+#sometext {
+	color: #4a85f2;
+	text-shadow: 1px 1px 2px #0d398b;
 
 }
-#alr{
-  font-family:'Verdana';
+#mishki {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-bottom: 10px;
 }
-#ph{
-  border:5px solid #fb95ff;
-  width: 959px;
-  height: 450px;
-  background-image: url('ton900m.jpg');
-  background-size:cover;
+#divbutton {
+	padding: 10px;
 }
-#intro{
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
-#tgbots{
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color:#811c0a ;
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
