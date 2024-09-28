@@ -1,36 +1,51 @@
 body {
-  background-color: #42049f;
+  background-color: black;
 }
+
 #title {
-	border: 3px solid black;
-	background-size: cover;
-	background-image: url('titlesite.jpg');
-}
-#titletext {
-	color:aquamarine;
-	font-family: Tahoma, "Trebuchet MS", sans-serif;
-}
-#textupdates {
-	padding: 10px;
-	margin-bottom: 10px;
-	background-size: cover;
-	background-image: url('mishka.jpg');
-}
-#sometext {
-	color: #4a85f2;
-	text-shadow: 1px 1px 2px #0d398b;
+  border: 3px solid black;
+  background-size: cover;
 
 }
+
+#titletext {
+  color: aquamarine;
+  font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+
+#textupdates {
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-size: cover;
+  font-size: 100px;
+  background-image: url('city.jpg');
+}
+
+#text {
+  background-image: url('back.jpg');
+
+}
+
+#sometext {
+  margin: 0;
+  color: #8758aa;
+  text-shadow: 1px 1px 2px #0d398b;
+
+}
+
 #mishki {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-bottom: 10px;
 }
+
 #divbutton {
-	padding: 10px;
+  padding: 10px;
 }
+
 .button-85 {
   padding: 0.6em 2em;
   border: none;
@@ -48,18 +63,16 @@ body {
 
 .button-85:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -78,9 +91,11 @@ body {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
