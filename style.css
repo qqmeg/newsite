@@ -1,114 +1,87 @@
 body {
-  background-color: black;
+  background-color: #291943;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#title {
-  border: 3px solid black;
-  background-size: cover;
-
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#titletext {
-  color: aquamarine;
-  font-family: Tahoma, "Trebuchet MS", sans-serif;
+#titlesite {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #9C8BA7;
+    text-align: center;
+    font-size: 45px;
+}
+#textupdates{
+    font-family: 'Raleway';
+    color: #CB5172;
+    text-align: center;
 }
 
-#textupdates {
-  padding: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-size: cover;
-  font-size: 100px;
-  background-image: url('city.jpg');
+.gradient-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #905F9E;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, #3A345B, #8569E4);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 21, 53, 0.4);
+}
+#div1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.gradient-btn::before {
+    margin: 0 auto;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #4B1535, #3A345B);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-#text {
-  background-image: url('back.jpg');
-
+.gradient-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 21, 53, 0.6);
 }
 
-#sometext {
-  margin: 0;
-  color: #8758aa;
-  text-shadow: 1px 1px 2px #0d398b;
-
+.gradient-btn:hover::before {
+    opacity: 1;
 }
 
-#mishki {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-bottom: 10px;
+.gradient-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(74, 21, 53, 0.3);
 }
 
-#divbutton {
-  padding: 10px;
+.gradient-btn span {
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.5px;
 }
 
-.button-85 {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
 
-.button-85:before {
-  content: "";
-  background: linear-gradient(45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 400% 0;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.button-85:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
